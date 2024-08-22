@@ -30,12 +30,48 @@ p, h1, h2, h3, h4, h5, h6 {
 
 .container {
   display: grid;
-  grid-template: 1fr 4fr / 1fr 6fr
+  grid-template: 1fr 4fr / 1fr 6fr;
+  height: 100vh;
 }
 
 .sidebar_container {
+  display: grid;
+  align-items: center;
+  grid-template-rows: 1fr 4fr 4fr;
+  grid-template-columns: 1fr 3fr;
   grid-row: 1 / 3;
-  border: 1px solid blue;
+  background-color: #4b5563;
+  color: #f3f4f6
+}
+
+.sidebar_regular_links {
+  display: grid;
+  align-items: center;
+  grid-column: 1 / 3;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: repeat(6, 60px);
+  margin-top: -50px;
+}
+
+.sidebar_important_links {
+  grid-column: 1 / 3;
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: repeat(3, 60px);
+  margin-top: -300px;
+}
+
+.sidebar_icon_small {
+  width: 30px;
+  height: 30px;
+  justify-self: right;
+  margin-right: 5px;
+}
+
+.sidebar_link {
+  font-size: 22px;
+  font-weight: bold;
 }
 
 header {
