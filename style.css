@@ -96,6 +96,7 @@ p, h1, h2, h3, h4, h5, h6 {
 
 .sidebar_link:active {
   background-color: #1f2937;
+  background-size: 700px;
 }
 
 header {
@@ -103,6 +104,7 @@ header {
   display:grid;
   grid-template: 1fr 1fr / 1fr 1fr;
 
+  background-color: #f9fafb;
   box-shadow: 0px 3px 5px #52525b
 
 }
@@ -162,7 +164,9 @@ header {
 
 .greeting_message p {
   font-size: 18px;
+  font-weight: bold;
 }
+
 .post_button_container {
   display: grid;
   align-items: center;
@@ -195,13 +199,41 @@ header {
 .main_container {
   display: grid;
   grid-template-columns: 2fr 1fr;
+  gap: 25px;
 
   background-color: #d1d5db;
 }
 
 .projects_container {
   display: grid;
-  grid-template: 1fr 4fr 4fr 4fr / 1fr 1fr
+  grid-template: 0.5fr 200px 200px 200px / 1fr 1fr;
+  align-items: center;
+  gap: 15px;
+  margin-left: 1vw;
+  padding-bottom: 4vh;
+}
+
+.projects_container .subtitle {
+  padding-top: 2vh;
+}
+
+.project_card {
+  height: 100%;
+  padding-left: 1.5vw;
+  padding-right: 1vw;
+  padding-bottom: 1.5vh;
+
+  display: grid;
+  grid-template-rows: 1fr 3fr 1fr;
+
+  background-color: #f9fafb;
+  border-left: 7px solid #f97316;
+  border-radius: 15px;
+}
+
+.card_icon_container {
+  display: flex;
+  justify-content: right;
 }
 
 .projects_container > .subtitle {
