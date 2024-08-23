@@ -9,41 +9,47 @@
 <body>
   <div class="container">
     <div class="sidebar_container">
-      <img src="assets/icons/flask-empty-outline.svg" alt="An icon of an empty flask.">
+      <img class="logo" src="assets/icons/flask-empty-outline.svg" alt="An icon of an empty flask.">
       <h1 class="sidebar_title">Dashboard</h1>
       <div class="sidebar_regular_links">
-        <img class="sidebar_icon_small" src="assets/icons/home.svg" alt="An icon of a house">
+        <img class="icon_small" src="assets/icons/home.svg" alt="An icon of a house">
         <a class="sidebar_link">Home</a>
-        <img class="sidebar_icon_small" src="assets/icons/account.svg" alt="An icon of a person">
+        <img class="icon_small" src="assets/icons/account.svg" alt="An icon of a person">
         <a class="sidebar_link">Profile</a>
-        <img class="sidebar_icon_small" src="assets/icons/comment.svg" alt="An icon of a chat bubble">
+        <img class="icon_small" src="assets/icons/comment.svg" alt="An icon of a chat bubble">
         <a class="sidebar_link">Messages</a>
-        <img class="sidebar_icon_small" src="assets/icons/clock.svg" alt="An icon of a clock">
+        <img class="icon_small" src="assets/icons/clock.svg" alt="An icon of a clock">
         <a class="sidebar_link">History</a>
-        <img class="sidebar_icon_small" src="assets/icons/file-multiple.svg" alt="An icon of multiple files">
+        <img class="icon_small" src="assets/icons/file-multiple.svg" alt="An icon of multiple files">
         <a class="sidebar_link">Tasks</a>
-        <img class="sidebar_icon_small" src="assets/icons/sitemap.svg" alt="An icon of a link tree">
+        <img class="icon_small" src="assets/icons/sitemap.svg" alt="An icon of a link tree">
         <a class="sidebar_link">Communities</a>
       </div>
       <div class="sidebar_important_links">
-        <img class="sidebar_icon_small" src="assets/icons/settings.svg" alt="An icon of a cog">
+        <img class="icon_small" src="assets/icons/settings.svg" alt="An icon of a cog">
         <a class="sidebar_link">Settings</a>
-        <img class="sidebar_icon_small" src="assets/icons/help-circle.svg" alt="An icon of a circled question mark">
+        <img class="icon_small" src="assets/icons/help-circle.svg" alt="An icon of a circled question mark">
         <a class="sidebar_link">Support</a>
-        <img class="sidebar_icon_small" src="assets/icons/shield.svg" alt="An icon of a shield">
+        <img class="icon_small" src="assets/icons/shield.svg" alt="An icon of a shield">
         <a class="sidebar_link">Privacy</a>
       </div>
     </div>
 
     <header>
       <div class="search_container">
-        <input type="search" name="search">
-        <span>Ursu Tudor</span>
+        <label for="searchbar"><img class="icon_small" src="assets/icons/magnify.svg" alt="An icon of a magnifying glass"></label>
+        <input type="search" id="searchbar" name="search">
+        <img class="icon_small notification_icon" src="assets/icons/bell.svg" alt="An icon of a bell">
+        <img class="profile_placeholder" src="assets/icons/account.svg" alt="An icon of a person">
+        <h2 class="user_name">Ursu Tudor</h2>
       </div>
       <div class="post_options_container">
         <div class="greeting_container">
-          <p>Hi there,</p>
-          <h1>Ursu Tudor(@ursu)</h1>
+          <img class="profile_placeholder" src="assets/icons/account.svg" alt="An icon of a person">
+          <div class="greeting_message">
+            <p>Hi there,</p>
+            <h1>Ursu Tudor(@ursu)</h1>
+          </div>
         </div>
         <div class="post_button_container">
           <button class="post_button">New</button>
