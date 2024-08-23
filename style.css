@@ -9,6 +9,7 @@
 body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
+  font-family: Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
 img, picture, video, canvas, svg {
@@ -44,10 +45,6 @@ p, h1, h2, h3, h4, h5, h6 {
 
   background-color: #4b5563;
   color: #f3f4f6
-}
-
-.logo {
-  border-radius: 100px;
 }
 
 .logo, 
@@ -86,7 +83,7 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 .sidebar_link {
-  font-size: 22px;
+  font-size: 20px;
   font-weight: bold;
 }
 
@@ -106,7 +103,6 @@ header {
 
   background-color: #f9fafb;
   box-shadow: 0px 3px 5px #52525b
-
 }
 
 .search_container {
@@ -132,7 +128,6 @@ header {
   height: 50px;
   background-color: #f97316;
 
-  border: none;
   border-radius: 30px;
   justify-self: center;
 }
@@ -155,11 +150,6 @@ header {
   width: 65px;
   height: 65px;
   grid-row: 1 / 3;
-  justify-self: left;
-}
-
-.greeting_message {
-  align-items: center;
 }
 
 .greeting_message p {
@@ -184,7 +174,7 @@ header {
 
   background-color: #f97316;
   color: #f3f4f6;
-  font-size: 22px;
+  font-size: 20px;
   font-weight: bold;
 }
 
@@ -198,42 +188,65 @@ header {
 
 .main_container {
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 3fr 1fr;
   gap: 25px;
+  padding-right: 1.5vw;
 
   background-color: #d1d5db;
 }
 
 .projects_container {
   display: grid;
-  grid-template: 0.5fr 200px 200px 200px / 1fr 1fr;
+  grid-template: 50px 200px 200px 200px / 1fr 1fr;
   align-items: center;
   gap: 15px;
   margin-left: 1vw;
-  padding-bottom: 4vh;
 }
 
-.projects_container .subtitle {
+.projects_container .subtitle,
+.announcement_subtitle,
+.trendind_subtitle {
+  font-size: 22px;
   padding-top: 2vh;
 }
 
 .project_card {
   height: 100%;
-  padding-left: 1.5vw;
-  padding-right: 1vw;
-  padding-bottom: 1.5vh;
+  padding: 0 1vw 1.5vh 1.5vw;
 
   display: grid;
   grid-template-rows: 1fr 3fr 1fr;
 
-  background-color: #f9fafb;
   border-left: 7px solid #f97316;
+}
+
+.project_card,
+.announcement_container,
+.trending_container {
+  background-color: #f9fafb;
   border-radius: 15px;
+  box-shadow: 0px 3px 5px #52525b
 }
 
 .card_icon_container {
   display: flex;
   justify-content: right;
+}
+
+.search_container .icon_small:hover,
+.card_icon_container .icon_small:hover,
+.trending_profile:hover,
+.announcement:hover{
+  background-color: #d1d5db;
+  border-radius: 15px;
+}
+
+.search_container .icon_small:active,
+.card_icon_container .icon_small:active,
+.trending_profile:active,
+.announcement:active{
+  background-color: #9ca3af;
+  border-radius: 15px;
 }
 
 .projects_container > .subtitle {
@@ -242,5 +255,43 @@ header {
 
 .news_container {
   display: grid;
-  grid-template-rows: 1fr 2r 2fr;
+  grid-template-rows: 50px 320px 25px 245px;
+  gap: 2vh;
+}
+
+.announcement_container {
+  display: grid;
+  padding: 10px;
+  gap: 10px;
+}
+
+.announcement {
+  padding: 10px;
+  font-size: 14px;
+}
+
+.middle_announcement {
+  border-top: 1px solid #d1d5db;
+  border-bottom: 1px solid #d1d5db;
+}
+
+.trending_container {
+  padding: 15px;
+}
+
+.trending_profile {
+  display: grid;
+  grid-template: 1fr 1fr / 1fr 5fr;
+  padding: 7px;
+  font-size: 14px;
+}
+
+.trending_profile .profile_placeholder {
+  width: 40px;
+  height: 40px;
+  grid-row: 1 / 3;
+}
+
+.user_tag {
+  font-weight: bold;
 }
